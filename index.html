@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="PITP Mid Preparation by Babul Khan">
+    <meta property="og:title" content="Exam Preparation for PITP Mid">
+    <meta property="og:description" content="By; Designer Babul Khan">
+    <meta property="og:image" content="https://pitpmidexam.netlify.app/live.jpg">
+
+    <link href="./logo.png" rel="icon">
+    <link href="./logo.png" rel="apple-touch-icon">
+
+    <title>PITP Mid Exam Prep | Babul Khan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-size: 11pt; /* Setting the base static font size */
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <h1>PITP Mid Exam Preparation by Babul Khan</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="./my-material.pdf" target="_blank" class="material-btn">Material (PDF)</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section id="introduction" class="content-section">
+            <h2 class="section-title">Introduction to Web Development</h2>
+            <p>Welcome to your **Mid-Exam Preparation** material! This document covers the fundamental concepts of HTML, CSS, and JavaScript—the three core pillars of the web.</p>
+            <p>Mastering these languages is the first step toward becoming a successful developer. Let's begin the journey!</p>
+        </section>
+
+        <section id="html-principles" class="content-section">
+            <h3 class="section-subtitle">PAGE 1: HTML - The Structure</h3>
+            <h4 class="mini-title">Core Principles & Rules</h4>
+            <p>HTML (HyperText Markup Language) is the standard markup language for documents designed to be displayed in a web browser. It provides the **structure** of the content.</p>
+            <ul>
+                <li>**Rule 1: Nesting:** Elements must be properly nested (last opened, first closed).</li>
+                <li>**Rule 2: Semantic Markup:** Use tags that describe the content (e.g., use `<h1>` for a main heading, not just a large font size).</li>
+                <li>**Rule 3: Attributes:** Provide extra information about the element, always in `name="value"` pairs.</li>
+            </ul>
+        </section>
+
+        <section id="html-syntax" class="content-section">
+            <h3 class="section-subtitle">PAGE 2: HTML - Syntax & Tags</h3>
+            <h4 class="mini-title">The Anatomy of an HTML Element</h4>
+            <p>The basic unit is the **Element**, made up of a start tag, content, and an end tag. </p>
+            <pre><code>&lt;tagname attribute="value"&gt;Content goes here.&lt;/tagname&gt;</code></pre>
+
+            <h4 class="mini-title">Key Terminology</h4>
+            <ul>
+                <li>**Tag:** The element name, enclosed in angle brackets (e.g., `&lt;p&gt;`).</li>
+                <li>**Attribute:** A modifier providing extra information (e.g., `href` in `&lt;a&gt;`).</li>
+                <li>**Value:** The setting for the attribute (e.g., `"https://example.com"`).</li>
+            </ul>
+
+            <h4 class="mini-title">Initial Essential Tags</h4>
+            <table class="initial-tags-table">
+                <thead>
+                    <tr><th>Tag</th><th>Purpose</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>`&lt;!DOCTYPE html&gt;`</td><td>Declaration, defines the document type.</td></tr>
+                    <tr><td>`&lt;html&gt;`</td><td>Root element of the HTML page.</td></tr>
+                    <tr><td>`&lt;head&gt;`</td><td>Contains meta-information (not visible on the page).</td></tr>
+                    <tr><td>`&lt;body&gt;`</td><td>Contains all the visible page content.</td></tr>
+                    <tr><td>`&lt;p&gt;`</td><td>Defines a paragraph.</td></tr>
+                    <tr><td>`&lt;h1&gt;` - `&lt;h6&gt;`</td><td>Define headings (most important to least).</td></tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="css-principles" class="content-section">
+            <h3 class="section-subtitle">PAGE 3: CSS - The Style</h3>
+            <h4 class="mini-title">Core Principles & Rules</h4>
+            <p>CSS (Cascading Style Sheets) is used to describe the **presentation** of a document written in a markup language. It dictates colors, layouts, and fonts.</p>
+            <ul>
+                <li>**Principle 1: Separation of Concerns:** Keep presentation (CSS) separate from structure (HTML).</li>
+                <li>**Principle 2: Cascade:** Rules are applied in a specific order (importance, specificity, source order).</li>
+                <li>**Principle 3: Box Model:** Every HTML element is a rectangular box, with content, padding, border, and margin. </li>
+            </ul>
+        </section>
+        
+        <section id="css-syntax" class="content-section">
+            <h3 class="section-subtitle">PAGE 4: CSS - Syntax & Selectors</h3>
+            <h4 class="mini-title">The Anatomy of a CSS Rule</h4>
+            <p>A CSS rule consists of a **Selector** and a **Declaration Block**.</p>
+            <pre><code>selector {
+    property: value;
+}</code></pre>
+            <ul>
+                <li>**Selector:** Points to the HTML element(s) you want to style (e.g., `p`, `#id-name`, `.class-name`).</li>
+                <li>**Property:** The aspect of the element you want to change (e.g., `color`, `font-size`).</li>
+                <li>**Value:** The setting you want to apply to the property (e.g., `blue`, `16px`).</li>
+                <li>**Declaration:** The entire `property: value;` pair.</li>
+            </ul>
+
+            <h4 class="mini-title">Initial Selectors</h4>
+            <table class="initial-tags-table">
+                <thead>
+                    <tr><th>Selector</th><th>Description</th><th>Example</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>**Type Selector**</td><td>Selects all elements of a given tag name.</td><td>`p { ... }`</td></tr>
+                    <tr><td>**Class Selector**</td><td>Selects all elements with a specific class attribute.</td><td>`.highlight { ... }`</td></tr>
+                    <tr><td>**ID Selector**</td><td>Selects the single element with a specific ID attribute.</td><td>`#header { ... }`</td></tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="css-properties" class="content-section">
+            <h3 class="section-subtitle">PAGE 5: CSS - Initial Properties</h3>
+            <h4 class="mini-title">Common Initial Properties</h4>
+            <table class="initial-tags-table">
+                <thead>
+                    <tr><th>Category</th><th>Property</th><th>Description</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>**Text**</td><td>`color`</td><td>Sets the color of the text.</td></tr>
+                    <tr><td></td><td>`font-family`</td><td>Sets the typeface.</td></tr>
+                    <tr><td></td><td>`text-align`</td><td>Aligns text (left, center, right).</td></tr>
+                    <tr><td>**Background**</td><td>`background-color`</td><td>Sets the background color of an element.</td></tr>
+                    <tr><td>**Box Model**</td><td>`width`, `height`</td><td>Sets the size of the content area.</td></tr>
+                    <tr><td></td><td>`padding`</td><td>Space between content and border.</td></tr>
+                    <tr><td></td><td>`margin`</td><td>Space outside the border.</td></tr>
+                    <tr><td>**Display**</td><td>`display`</td><td>Sets how an element is laid out (`block`, `inline`, `flex`).</td></tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="js-principles" class="content-section">
+            <h3 class="section-subtitle">PAGE 6: JavaScript - The Behavior</h3>
+            <h4 class="mini-title">Core Principles & Rules</h4>
+            <p>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, and animate images. It provides the **behavior** of a webpage.</p>
+            <ul>
+                <li>**Principle 1: Event-Driven:** It reacts to user actions (clicks, key presses) and browser events (page load).</li>
+                <li>**Principle 2: Interpreted:** Code is executed line-by-line by the browser, not compiled beforehand.</li>
+                <li>**Principle 3: DOM Manipulation:** It interacts with the HTML structure (Document Object Model) to dynamically change content and styles. </li>
+            </ul>
+        </section>
+        
+        <section id="js-syntax" class="content-section">
+            <h3 class="section-subtitle">PAGE 7: JavaScript - Syntax & Variables</h3>
+            <h4 class="mini-title">Basic Syntax Rules</h4>
+            <ul>
+                <li>**Statements:** Instructions end with a semicolon (`;`).</li>
+                <li>**Case Sensitivity:** JavaScript is case-sensitive (e.g., `myVariable` is different from `MyVariable`).</li>
+                <li>**Comments:** Use `//` for single-line and `/* ... */` for multi-line comments.</li>
+            </ul>
+
+            <h4 class="mini-title">Variables</h4>
+            <p>Variables are containers for storing data values. The modern way to declare them is with `let` and `const`.</p>
+            <pre><code>// let: a variable that can be reassigned
+let message = "Hello World"; 
+message = "New Message";
+
+// const: a constant variable (cannot be reassigned)
+const PI = 3.14; </code></pre>
+            <p>**Data Types:** Initial types include **String** (text), **Number** (integers/decimals), and **Boolean** (true/false).</p>
+        </section>
+        
+        <section id="js-functions" class="content-section">
+            <h3 class="section-subtitle">PAGE 8: JavaScript - Functions & DOM</h3>
+            <h4 class="mini-title">Functions</h4>
+            <p>A function is a block of code designed to perform a particular task, which can be reused.</p>
+            <pre><code>function greet(name) {
+    return "Hello, " + name + "!";
+}
+
+console.log(greet("Babul")); // Output: Hello, Babul!</code></pre>
+            
+            <h4 class="mini-title">Initial DOM Interaction</h4>
+            <p>The key to dynamic web pages is interacting with the HTML elements.</p>
+            <pre><code>// 1. Get an element by its ID
+let headerElement = document.getElementById("header");
+
+// 2. Change the element's content
+headerElement.innerHTML = "New Title!"; 
+
+// 3. Change the element's CSS style
+headerElement.style.color = "red";</code></pre>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2 class="section-title">About This Material</h2>
+            <p>This preparation guide is created by <b><a href="https://devbabul.live" target="_blank">Babul Khan</a></b> to help students review the fundamental concepts of HTML, CSS, and JavaScript before the mid-term examination. Use it as a quick reference and a solid foundation for your studies. Good luck!</p>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2 class="section-title">Contact</h2>
+            <p>For questions or feedback regarding this material, please contact me through the following:</p>
+            <p>Email: <a href="mailto:devbabulkhan@gmail.com">devbabulkhan@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/babulkhan" target="_blank">Babul Khan</a></p>
+            <p>WhatsApp: <a href="https://wa.me/923483295716" target="_blank">0348 3295716</a></p>
+        </section>
+
+        <footer class="footer">
+            <p>Designed with ❤️ by <a href="https://devbabul.live" target="_blank">Babul Khan</a></p>
+        </footer>
+
+    </main>
+    
+    </body>
+</html>

@@ -1,0 +1,202 @@
+/*
+    Web Development Mid Exam Preparation
+    CSS Stylesheet (styles.css)
+    Author: Babul Khan
+*/
+
+/* ----------------------------------
+   Global Styles & Variables
+   ---------------------------------- */
+:root {
+    /* Define the color scheme */
+    --primary-color: #ff9900; /* Dark Yellow / Orange */
+    --secondary-color: #333;  /* Dark text */
+    --background-color: #fff; /* White background */
+    --light-bg-color: #fff8e1; /* Very light orange for highlighting */
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+    /* Base font size is 11pt, set in the <style> tag of the HTML file for static size adherence */
+}
+
+/* Ensure the main container is centered and readable */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* ----------------------------------
+   Navigation Bar Styling
+   ---------------------------------- */
+.navbar {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Keeps the navbar visible at the top */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px; /* Adjust size as needed for your logo */
+    height: 40px;
+    margin-right: 10px;
+    /* This will be replaced by your PNG logo */
+    /* background-color: #fff;  */
+    border-radius: 5px;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.material-btn {
+    /* Optional: make the material button stand out */
+    background-color: #e55300; 
+    font-weight: bold;
+}
+
+.material-btn:hover {
+    background-color: #cc4a00;
+}
+
+
+/* ----------------------------------
+   Content and Typography
+   ---------------------------------- */
+.content-section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+    /* Page separation for visual clarity */
+    margin-bottom: 20px; 
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 2em;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.section-subtitle {
+    color: var(--secondary-color);
+    font-size: 1.4em;
+    margin-top: 30px;
+    background-color: var(--light-bg-color);
+    padding: 5px 10px;
+    display: inline-block;
+    border-left: 5px solid var(--primary-color);
+}
+
+.mini-title {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+/* Text elements */
+p {
+    margin: 10px 0;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+/* Code blocks */
+pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow-x: auto;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    color: #c7254e; /* Inline code color */
+}
+
+pre code {
+    color: #333; /* Code block text color */
+}
+
+/* Links in content */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------------------
+   Tables
+   ---------------------------------- */
+.initial-tags-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.initial-tags-table th, .initial-tags-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.initial-tags-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.initial-tags-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ----------------------------------
+   Footer
+   ---------------------------------- */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    color: #999;
+    font-size: 0.9em;
+}
